@@ -1,6 +1,6 @@
 -
   var shopInfo = {
-    phone: '8 800 799 99 99',
+    phone: '12345',
     email: 'example@example.com',
     address: 'St.&nbsp;Petersburg, Nevsky&nbsp;Prospect&nbsp;28',
     openingHours: 'Daily 10:00–22:00',
@@ -77,7 +77,7 @@
 
   var brands = [{
     name: 'Apple',
-    image: 'images/brands/apple.svg',
+    image: '/images/brands/apple.svg',
   }, {
     name: 'Samsung',
     image: 'images/brands/samsung.svg'
@@ -123,16 +123,18 @@
     name: 'Payment',
     href: '#'
   }]
-
+  //barras de navegacion de arriba
   var navbarMenu = [{
-    name: 'Catalog',
+    name: 'Productos',
     href: 'catalog.html',
     items: catalog
   }, {
     name: 'Brands',
     href: 'brands.html',
     items: brands
-  }, {
+  }, 
+  //Pages contenido
+  {
     name: 'Pages',
     href: '#',
     items: [{
@@ -154,15 +156,6 @@
       name: 'Checkout',
       href: 'checkout.html'
     }, {
-      name: 'Compare',
-      href: 'compare.html'
-    }, {
-      name: 'Brands',
-      href: 'brands.html'
-    }, {
-      name: 'Compare',
-      href: 'compare.html'
-    }, {
       name: 'Account',
       href: 'account.html'
     }, {
@@ -177,27 +170,6 @@
     }, {
       name: 'About',
       href: 'about.html'
-    }, {
-      name: 'Contacts',
-      href: 'contacts.html'
-    }, {
-      name: 'Blog',
-      href: 'blog.html'
-    }, {
-      name: 'News',
-      href: 'news.html'
-    }, {
-      name: 'Article',
-      href: 'article.html'
-    }, {
-      name: 'FAQ',
-      href: 'faq.html'
-    }, {
-      name: 'Delivery',
-      href: 'delivery.html'
-    }, {
-      name: '404',
-      href: '404.html'
     }]
   }, {
     name: 'Blog',
@@ -209,7 +181,7 @@
     name: 'Contacts',
     href: 'contacts.html'
   }]
-
+  //menu de abajo izquierda
   var footerMenuLeft = [{
     name: 'Catalog',
     href: 'catalog.html'
@@ -226,7 +198,7 @@
     name: 'Payment',
     href: '#'
   }]
-
+  //menu de abajo derecha
   var footerMenuRight = [{
     name: 'About',
     href: 'about.html'
@@ -278,7 +250,7 @@
       small: 'images/products/1/1-add-4-small.jpg',
       large: 'images/products/1/1-add-4-large.jpg',
     }],
-    price: '$1599.00',
+    price: '$1129.00',
     oldPrice: '$1899.00',
     brand: {
       name: 'Apple',
@@ -417,7 +389,7 @@
     isOnSale: true,
     isAddedToCart: true,
     isAddedToFavorites: true,
-    isAddedToCompare: true,
+    isAddedToCompare: false,
     statuses: ['top selling', 'trade-in'],
     properties: {
       'Diagonal display': '15.4"',
